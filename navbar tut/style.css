@@ -1,0 +1,368 @@
+/* https://www.youtube.com/watch?v=DZg6UfS5zYg */
+/* CORE STYLES */
+:root {
+  --primary-color: #5D4954;  
+  /* 5D4954 */
+  --overlay-color: rgba(24, 39, 51 , 0.85);
+  --menu-speed: 0.75s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+.showcase {
+  background: var(--primary-color);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+.showcase:before {
+  content: '';
+  background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+}
+
+.showcase p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary-color);
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+  background-color: white;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+
+/* Image slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+.slide{
+    position: absolute;
+    top: 0;
+    left 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current{
+    opacity: 1;
+}
+
+
+.slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    
+    color: #fff;
+    padding: 35px;
+}
+
+.slide .landing {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 35px;
+}
+
+
+.slide .content h1 {
+    margin-bottom: 10px;
+}
+
+.slide .landing h1 {
+  margin-bottom: 10px;
+}
+  
+.slide.current .content {
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.slide.current .landing {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+
+
+.buttons button#next {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+  }
+  
+.buttons button#prev {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+}
+  
+.buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+  
+.buttons button:hover {
+    background-color: #fff;
+    color: #333;
+}
+  
+@media (max-width: 500px) {
+    .slide .content {
+      bottom: -300px;
+      left: 0;
+      width: 100%;  
+    }
+    .slide .landing {
+      bottom: -300px;
+      left: 0;
+      width: 100%;  
+    }
+
+    .slide.current .content {
+      transform: translateY(-300px);
+    }
+    .slide.current .landing {
+      transform: translateY(-300px);
+    }
+}
+
+
+/* Backgorund Images  */
+ 
+.slide:first-child {
+  background: url('https://source.unsplash.com/RyRpq9SUwAU/1600x900') no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('https://source.unsplash.com/BeOW_PJjA0w/1600x900') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('https://source.unsplash.com/TMOeGZw9NY4/1600x900') no-repeat
+    center top/cover;
+}
+.slide:nth-child(4) {
+  background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat
+    center top/cover;
+}
+
+
+/* Events section */
+section{
+  width: 100%;
+  height: 100%;  
+  background-color: #fff;
+}
+
+.flexboxContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex;
+}
+
+.flexbox-item{
+  width: 50%;
+  margin: 10px;
+  background-color: red;
+}
+
+.flexbox-item flexbox-item-1{
+  min-height: 110%;
+}
+
+.flexbox-item flexbox-item-2{
+  min-height: 110%;
+}
+
+
+
+section .leftBox{
+  width: 100%;
+  height: 50%;
+  float: left;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+section .leftBox .content{
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  transition: 0.5s;
+}
+
+section .leftBox .content:hover{
+  background: #e91e63;
+}
+
+section .leftBox .content h1{
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+section .leftBox .content p{
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+section .events{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  float: right;
+  box-sizing: border-box;
+}
+
+section .events ul{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+
+}
+
+section .events ul li{
+  list-style: none;
+  background: #fff;
+  box-sizing: border-box;
+  height: 200px;
+}
+
+section .events ul li .time{
+  position: relative;
+  padding: 20px;
+  background: #262626;
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  transition: .5s;
+}
+
+section .events ul li:hover .time{
+  background: #e91e63;
+}
+
+section .events ul li .time h2{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+
+section .events ul li .time h2 span{
+  font-size: 30px;
+}
+
+section .events ul li .details{
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+
+section .events ul li .details h3{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+section .events ul li .details p{
+  position: relative;
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+section .events ul li .details a{
+  display:inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+section .events ul li .details a:hover{
+  background: #e91e63;
+  color: #fff;
+}
