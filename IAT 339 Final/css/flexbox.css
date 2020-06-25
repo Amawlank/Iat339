@@ -1,0 +1,240 @@
+/* This css code is for the menu webpage and product webpage for all other webpages refer to other css codes*/
+
+
+*,*::after, *::before{
+  box-sizing: border-box;
+}
+
+
+body{
+	height: 100%;
+    margin:0;
+ 	font-family: Arial, Helvetica, sans-serif;
+/* 	background-color: #bbb;*/
+	display: flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+}
+
+.content{
+	flex: 1 0 auto;
+	height: 100%;
+}
+
+.box{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: -ms-flex;
+  flex-wrap: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: flex-end;
+
+}
+
+/*Menu */
+
+.flexbox-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.flexbox-item{
+  width: 200px;
+  margin: 50px;
+/*
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+*/
+}
+
+.flexbox-item-1{
+  min-height: 300px;
+}
+
+.flexbox-item-2{
+  min-height:300px;
+}
+
+.flexbox-item-3{
+  min-height:300px;
+}
+
+.flexbox-item-4{
+  min-height:300px;
+}
+
+.flexbox-item-5{
+  min-height: 300px;
+}
+
+.flexbox-item-6{
+  min-height:300px;
+}
+
+.flexbox-item-7{
+  min-height:300px;
+}
+
+.flexbox-item-8{
+  min-height:300px;
+}
+
+
+h1{
+	color: black;
+	padding-top: 50px;
+}
+
+/*second navigation for menu screen starts here*/
+.button{
+background-color:#e91e63;
+border: none;
+color: #000000;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 15px;
+cursor: pointer;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+border-radius: 12px;
+}
+
+.button:hover{
+	background-color: rgba(28,30,10,1.00);
+	color: #FFFFFF;
+}
+
+/*Second navigation for menu screen ends here */
+
+.add {
+background-color: #959595;
+	align-content: center;
+border: none;
+color: #000000;
+padding: 7px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 7px;
+/*margin: 75px;*/
+cursor: pointer;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+/*border-radius: 12px;*/
+}
+
+.add:hover{
+	background-color:#333333;
+	color: #FFFFFF;
+}
+
+.view{
+background-color: #e91e63;;
+align-content: center;
+border: none;
+color: #000000;
+padding: 7px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 7px;
+/*margin: 75px;*/
+cursor: pointer;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+/*border-radius: 12px;*/
+}
+
+.add:hover{
+	background-color:#333333;
+	color: #FFFFFF;
+}
+
+.view:hover {
+	background-color:#333333;
+	color: #FFFFFF;
+}
+
+/*Product Page*/
+
+
+.flexbox-Product-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+}
+
+.flexbox-product{
+  min-width: 200px;
+  margin: 70px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+}
+
+.flexbox-product-1{
+	padding-top: 10px;
+	min-height:300px;
+}
+
+.flexbox-description-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+}
+
+.flexbox-description{
+  width: 500px;
+  margin: 50px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+}
+
+.flexbox-description-1{
+	padding-top: 10px;
+	min-height:300px;
+}
+.flexbox-description-2{
+	padding-top: 10px;
+	min-height:300px;
+}
+
+.flexbox-video-container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.flexbox-video-1{
+  width: 800px;
+  margin: 50px;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+  padding-top: 5px;
+	min-height:300px;
+}
+
+
+
+
+
+
+
+
+

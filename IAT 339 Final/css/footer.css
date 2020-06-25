@@ -1,0 +1,78 @@
+/* Footer Code*/
+
+
+.footer{
+	background-color: "#2A2A2A";
+	color: white;
+	height: 100px;
+	position: relative;
+	clear: both;
+}
+
+.footer .footer-section{
+	border: 1px solid;
+	height: 350px;
+	
+}
+
+
+.footer .footer-content {
+	background: #2D2D2D;
+	height: 350px;
+	width: 100%;
+	text-align: left;
+	display:flex;
+}
+
+.footer .footer-content .links ul a{
+	
+	display:block;
+	margin: 10px;
+	font-size: 1.2em;
+	align:center;
+	text-align: center;
+	color: white;
+	transitions: all .3s;
+}
+
+.footer .footer-content .links ul a:hover {
+	
+	display:block;
+	margin-left: 15px;
+	transitions: all .3s;
+}
+
+
+
+.footer-content h1{
+	margin: 40px;
+	color: white;
+}
+
+.footer .footer-content .footer-section {
+	flex: 1;
+	border: 1px solid white;
+}
+
+.footer .footer-content .contact-form .contact-input{
+	background: #2727272;
+	color: white;
+	margin-bottom: 10px;
+	line-height:1.5rem;
+	padding: .9rem 1.4rem;
+	border: none;
+}
+
+
+.footer .footer-bottom{
+	background: #000;
+	color: #FFFFFF;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+	position: absolute;
+	
+}
+
+
