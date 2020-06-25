@@ -115,7 +115,7 @@
   }
   
   .menu-wrap .menu > div {
-    background: var(--overlay-color);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     width: 200vw;
     height: 200vw;
