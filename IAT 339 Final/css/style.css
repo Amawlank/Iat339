@@ -305,7 +305,7 @@ section .events ul li .time{
 }
 
 section .events ul li:hover .time{
-  background: green;
+  background: #009245;
 }
 
 section .events ul li .time h2{
@@ -358,7 +358,7 @@ section .events ul li .details a{
 }
 
 section .events ul li .details a:hover{
-  background: green;
+  background: #009245;
   color: #fff;
 }
 
@@ -521,7 +521,7 @@ section .events ul li .details a:hover{
   margin: 0 45% 3%;
 }
 .button1:hover {
-  background-color: green;
+  background-color: #009245;
 }
 
 
@@ -635,7 +635,7 @@ section .events ul li .details a:hover{
 
 /* GET STARTED SECTION BEGINS */
 
-.getStarted{
+/* .getStarted{
   height: 300px;
   width:100%;
   background-image: url("https://user-images.githubusercontent.com/56777028/85898026-5831b080-b7b0-11ea-8ab6-55d67f2ceadb.jpg");
@@ -665,11 +665,11 @@ section .events ul li .details a:hover{
 .getStarted a:hover{
   background-color: green;
   transition: 0.5s;
-}
+} */
 
 /* STAY UPDATED Begins */
 
-.stayUpdated{
+/* .stayUpdated{
   width: 100%;
   text-align: center;
   height: 150px;
@@ -704,4 +704,4 @@ form{
 .stayUpdated a:hover{
   background-color: green;
   transition: 0.5s;
-}
+} */
