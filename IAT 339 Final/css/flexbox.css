@@ -16,6 +16,9 @@ body{
 	flex-wrap: wrap;
 }
 
+.content-h1{
+  background-image: ;
+}
 .content{
 	flex: 1 0 auto;
 	height: 100%;
@@ -40,11 +43,13 @@ body{
 .flexbox-container{
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   align-content: center;
+  padding-bottom: 50px;
 }
 .flexbox-item{
+  padding-bottom: 50px;
   width: 200px;
   margin: 50px;
 /*
@@ -54,35 +59,110 @@ body{
 }
 
 .flexbox-item-1{
+  background-color: #000;
+  color: white;
   min-height: 300px;
 }
 
+.flexbox-item-1:hover{
+  background-color: #009245;
+  min-height: 310px;
+  width: 210px;
+}
+
+
 .flexbox-item-2{
+  background-color: #000;
+  color: white;
   min-height:300px;
+}
+
+.flexbox-item-2:hover{
+  background-color: #009245;
+  min-height: 300px;
 }
 
 .flexbox-item-3{
+  background-color: #000;
+  color: white;
   min-height:300px;
+}
+
+.flexbox-item-3:hover{
+  background-color: #009245;
+  min-height: 300px;
 }
 
 .flexbox-item-4{
+  background-color: #000;
+  color: white;
   min-height:300px;
 }
 
+.flexbox-item-4:hover{
+  background-color: #009245;
+  min-height: 300px;
+}
+
 .flexbox-item-5{
+  background-color: #000;
+  color: white;
+  min-height: 300px;
+}
+
+.flexbox-item-5:hover{
+  background-color: #009245;
   min-height: 300px;
 }
 
 .flexbox-item-6{
+  background-color: #000;
+  color: white;
   min-height:300px;
 }
 
+.flexbox-item-6:hover{
+  background-color: #009245;
+  min-height: 300px;
+}
 .flexbox-item-7{
+  background-color: #000;
+  color: white;
   min-height:300px;
 }
-
+.flexbox-item-7:hover{
+  background-color: #009245;
+  min-height: 300px;
+}
 .flexbox-item-8{
+  background-color: #000;
+  color: white;
   min-height:300px;
+}
+.flexbox-item-8:hover{
+  background-color: #009245;
+  min-height: 300px;
+}
+
+.flexbox-item-9{
+  background-color: #000;
+  color: white;
+  min-height:300px;
+}
+.flexbox-item-9:hover{
+  background-color: #009245;
+  min-height: 300px;
+}
+
+
+.flexbox-item-10{
+  background-color: #000;
+  color: white;
+  min-height:300px;
+}
+.flexbox-item-10:hover{
+  background-color: #009245;
+  min-height: 300px;
 }
 
 
