@@ -17,7 +17,7 @@ body{
 }
 
 .content-h1{
-  background-image: ;
+  background-image: src("img/menu-bg.jpg") ;
 }
 .content{
 	flex: 1 0 auto;
@@ -52,118 +52,83 @@ body{
   padding-bottom: 50px;
   width: 200px;
   margin: 50px;
-/*
-  border: 3px solid #333;
-  background-color: #dfdfdf;
-*/
+  background-color: #fff;
+  min-height: 300px;
+
 }
 
-.flexbox-item-1{
-  background-color: #000;
-  color: white;
+.flexbox-item:hover{
+  border: 3px solid #009245;
+  border-radius: 1.2em;
   min-height: 300px;
 }
 
-.flexbox-item-1:hover{
+/* .flexbox-item-1:hover{
   background-color: #009245;
   min-height: 310px;
   width: 210px;
 }
 
 
-.flexbox-item-2{
-  background-color: #000;
-  color: white;
-  min-height:300px;
-}
-
 .flexbox-item-2:hover{
-  background-color: #009245;
+  border: 3px solid #009245;
+  border-radius: 1.2em;
   min-height: 300px;
-}
-
-.flexbox-item-3{
-  background-color: #000;
-  color: white;
-  min-height:300px;
 }
 
 .flexbox-item-3:hover{
-  background-color: #009245;
+  border: 3px solid #009245;
+  border-radius: 1.2em;
   min-height: 300px;
 }
 
-.flexbox-item-4{
-  background-color: #000;
-  color: white;
-  min-height:300px;
-}
 
 .flexbox-item-4:hover{
-  background-color: #009245;
+  border: 3px solid #009245;
+  border-radius: 1.2em;
   min-height: 300px;
 }
 
-.flexbox-item-5{
-  background-color: #000;
-  color: white;
-  min-height: 300px;
-}
 
 .flexbox-item-5:hover{
-  background-color: #009245;
+  border: 3px solid #009245;
+  border-radius: 1.2em;
   min-height: 300px;
 }
 
-.flexbox-item-6{
-  background-color: #000;
-  color: white;
-  min-height:300px;
-}
+
 
 .flexbox-item-6:hover{
-  background-color: #009245;
+  border: 3px solid #009245;
+  border-radius: 1.2em;
   min-height: 300px;
 }
-.flexbox-item-7{
-  background-color: #000;
-  color: white;
-  min-height:300px;
-}
+
 .flexbox-item-7:hover{
-  background-color: #009245;
+  border: 3px solid #009245;
+  border-radius: 1.2em;
   min-height: 300px;
 }
-.flexbox-item-8{
-  background-color: #000;
-  color: white;
-  min-height:300px;
-}
+
 .flexbox-item-8:hover{
-  background-color: #009245;
+  border: 3px solid #009245;
+  border-radius: 1.2em;
   min-height: 300px;
 }
 
-.flexbox-item-9{
-  background-color: #000;
-  color: white;
-  min-height:300px;
-}
+
 .flexbox-item-9:hover{
-  background-color: #009245;
+  border: 3px solid #009245;
+  border-radius: 1.2em;
   min-height: 300px;
 }
 
 
-.flexbox-item-10{
-  background-color: #000;
-  color: white;
-  min-height:300px;
-}
 .flexbox-item-10:hover{
-  background-color: #009245;
+  border: 3px solid #009245;
+  border-radius: 1.2em;
   min-height: 300px;
-}
+} */
 
 
 h1{
