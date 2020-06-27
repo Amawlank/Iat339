@@ -93,7 +93,7 @@ h1{
 
 /*second navigation for menu screen starts here*/
 .button{
-background-color:#e91e63;
+background-color:#009245;
 border: none;
 color: #000000;
 padding: 15px 32px;
@@ -109,7 +109,7 @@ border-radius: 12px;
 }
 
 .button:hover{
-	background-color: #009245;
+	background-color: #000;
 	color: #FFFFFF;
 }
 
@@ -124,7 +124,7 @@ padding: 7px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 7px;
+font-size: 15px;
 /*margin: 75px;*/
 cursor: pointer;
 -webkit-transition-duration: 0.4s; /* Safari */
@@ -146,7 +146,7 @@ padding: 7px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
-font-size: 7px;
+font-size: 15px;
 /*margin: 75px;*/
 cursor: pointer;
 -webkit-transition-duration: 0.4s; /* Safari */
