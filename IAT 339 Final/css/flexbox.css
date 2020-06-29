@@ -65,12 +65,13 @@ border-radius: 12px;
   width: 200px;
   margin: 25px;
   background-color: #fff;
-  min-height: 200px;
+  min-height: 100px;
   transition: all .5s;
 }
 .flexbox-item .add{
   align-items: flex-end;
   width: 100%;
+  object-fit: cover;
  
 }
 .flexbox-item .view{
@@ -81,7 +82,7 @@ border-radius: 12px;
 .flexbox-item:hover{
   
   width: 210px;
-  min-height: 210px;
+  min-height: 50px;
   box-shadow: 1px 1px 2px #000000;
   transition: all .5s;
 }
@@ -174,10 +175,7 @@ opacity: 0;
 
 
 .flexbox-about .steps{
-
-
   width: 400px;
-
 }
 
 .flexbox-video{
