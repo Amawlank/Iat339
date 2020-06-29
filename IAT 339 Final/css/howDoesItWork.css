@@ -1,0 +1,264 @@
+*{
+    padding: 10px;
+}
+.how h1{
+    text-align: center;
+    font-size: 40px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+.flexboxContainer{
+    display: flex;
+    justify-content: center;
+}
+.flexbox-item{
+    margin: 10px;
+    /* background-color: red; */
+}
+
+.flexboxitem1{
+    min-height: 400px;
+    width: 45%;
+    background: url('https://gorgeoussmiledental.com/wp-content/uploads/2017/08/1491.jpg') no-repeat
+    center top/cover;;
+    margin: 10px;
+}
+
+.flexboxitem2{
+    width: 10%;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+.flexboxitem2 h1{
+    border-style: solid;
+}
+
+.flexboxitem3{
+    width: 45%;
+    min-height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flexboxitem3 h1{
+    text-align: center;
+    font-size: 30px;
+}
+.flexboxitem3 p{
+    text-align: center;
+    font-size: 22px;
+}
+.flexboxitem3 a{
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.flexboxitem3 a:hover{
+    
+    background: #009245;
+    color: #fff; 
+    transition: 0.5s;  
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+@media (max-width: 1440px) { 
+    .pickAplann{
+        font-size: 22px;
+        display: flex;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {   
+    .flexboxContainer{
+        width: 100%;
+        height: 400px;
+    }
+    .how .flexboxitem1{
+        background-color: yellow;
+        min-height: 5%;
+    }
+    .how .flexboxitem1 .h1{
+        margin: 0%;
+    }
+    .flexboxitem3 h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .flexboxitem3 p {
+        font-size: 18px;
+    }
+    .flexboxitem3 a{
+        font-size: 18px;
+    }
+    .how{
+        margin-bottom: 10%;
+    }
+    .pickAplann{
+        font-size: 18px;
+        display: flex;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+    }
+}   
+
+@media (max-width: 425px) {   
+    .flexboxContainer{
+        height: 600px;
+        width: 95%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+     .how .flexbox-item{
+        width: 400px;
+        min-height: 30%;
+        margin: 0;
+    }
+    .how .flexboxitem1{
+        width: 350px;
+    }
+    
+    .how .flexboxitem2{
+        padding: 0;
+        justify-content: space-around;
+        min-height: 100px;
+    }
+    .how .flexboxitem3{
+        padding: 0;
+        min-height: 100px;
+    }
+    .flexboxitem3 p{
+        margin: 0;
+    }
+    .pickAplann{
+        align-items: center;
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 375px) {   
+    .flexboxContainer{
+       height: 800px;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+    }
+    .how .flexbox-item{
+        width: 375px;
+        min-height: 30%;
+    }
+    .how .flexboxitem2{
+        padding: 0;
+        justify-content: space-around;
+        min-height: 150px;
+    }
+    .how .flexboxitem3{
+        padding: 0;
+    }
+    .flexboxitem3 p{
+        font-size: 18px;
+    }
+    .pickAplann{
+        align-items: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+}
+
+
+/* benefit begins*/
+.benefits{
+    background-color: #eceae6;
+}
+
+.benefits h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.flexboxContainerBenefits{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flexbox-benefit{
+    width: 400px;
+    margin: 10px;
+    height: 200px;
+}
+   
+
+.flexbox-benefit h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+.flexbox-benefit p{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+
+.flexboxContainerBenefits a{
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.flexboxContainerBenefits a:hover{
+    
+    background: #009245;
+    color: #fff; 
+    transition: 0.5s;  
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+@media (max-width: 1440px) {   
+    flexbox-benefit{
+        width: 500px;
+    }
+} 
+
+@media (max-width: 768px) {   
+    .flexboxContainerBenefits{
+        height: 1200px;
+    }
+    .flexbox-benefit{
+        padding: 0;
+        margin: 0;
+    }
+} 
+
+
+
+@media (max-width: 375px) {   
+    flexbox-benefit{
+        width: 400px;
+        background-color: yellow;
+    }
+}
+

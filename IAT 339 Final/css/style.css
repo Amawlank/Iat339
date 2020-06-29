@@ -1,6 +1,68 @@
 /* https://www.youtube.com/watch?v=DZg6UfS5zYg */
 /* CORE STYLES */
 
+/* Changing TEXT ANIMATION                   https://www.youtube.com/watch?v=iacREwS0SFI */
+
+header{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contain{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  height: 100px;
+  margin-top: 300px;
+}
+
+h4, .title1, .title2{
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  opacity: 0;
+  color: white;
+}
+.contain h4{
+  opacity: 1;
+  font-size: 45px;
+}
+.title1, .title2{
+  position: absolute;
+  bottom: 0px;
+}
+.title1{
+  animation: 4s slideDown 0s infinite;
+}
+.title2{
+  animation: 4s slideDown 2s infinite;
+}
+@keyframes slideDown{
+  0%{
+    opacity: 0;
+    bottom: 40px;
+  }
+  5%{
+    opacity: 1;
+    bottom: 0;
+  }
+  45%{
+    opacity: 1;
+    bottom: 0;
+  }
+  50%{
+    opacity: 0;
+    bottom: -40px;
+  }
+}
+/* Changing TEXT ANIMATION END */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -123,6 +185,7 @@ body {
 
 .slide .landing h1 {
   margin-bottom: 10px;
+  color: white;
 }
   
 .slide.current .content {
@@ -261,6 +324,7 @@ section .leftBox .content h1{
   padding: 0;
   font-size: 50px;
   text-transform: uppercase;
+  color: #fff;
 }
 
 section .leftBox .content p{
@@ -506,7 +570,7 @@ section .events ul li .details a:hover{
   center top/cover;
 }
 
-.button1 {
+.button {
   border: none;
   background-color:rgba(0, 0, 0, 0.8);
   padding: 16px 32px;
@@ -635,7 +699,7 @@ section .events ul li .details a:hover{
 
 /* GET STARTED SECTION BEGINS */
 
-/* .getStarted{
+.getStarted{
   height: 300px;
   width:100%;
   background-image: url("https://user-images.githubusercontent.com/56777028/85898026-5831b080-b7b0-11ea-8ab6-55d67f2ceadb.jpg");
@@ -665,7 +729,7 @@ section .events ul li .details a:hover{
 .getStarted a:hover{
   background-color: green;
   transition: 0.5s;
-} */
+}
 
 /* STAY UPDATED Begins */
 

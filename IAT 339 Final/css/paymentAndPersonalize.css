@@ -1,0 +1,28 @@
+*{
+    padding: 10px;
+}
+.how h1{
+    text-align: center;
+    font-size: 40px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+.flexboxContainer{
+    display: flex;
+    justify-content: center;
+}
+.flexbox-item{
+    margin: 10px;
+    width: 50%;
+    background-color: red;
+}
+
+.flexboxitem1{
+    min-height: 400px;
+}
+
+.flexboxitem2{
+    min-height: 400px;
+}
