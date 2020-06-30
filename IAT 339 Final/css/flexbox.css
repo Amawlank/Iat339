@@ -31,14 +31,20 @@ cursor: pointer;
 transition-duration: 0.4s;
 border-radius: 12px;
 }
+
+.button a{
+  color: #fff;
+  text-decoration: none;
+
+}
 .button:hover{
 	background-color: #000;
 	color: #FFFFFF;
 }
-.content{
+/* .content{
 	flex: 1 0 auto;
 	height: 100%;
-}
+} */
 .box{
   display: -ms-flex;
   display: -webkit-flex;
@@ -62,12 +68,19 @@ border-radius: 12px;
 }
 .flexbox-item{
   padding-bottom: 50px;
-  width: 200px;
+  width: 300px;
   margin: 25px;
   background-color: #fff;
   min-height: 100px;
   transition: all .5s;
 }
+.flexbox-item:hover{
+  width: 310px;
+  height: 400%;
+  box-shadow: 1px 1px 7px #000000;
+  transition: all .5s;
+}
+
 .flexbox-item a{
   text-decoration: none;
   color: black;
@@ -124,13 +137,7 @@ border-radius: 12px;
   object-fit: cover;
  
 }
-.flexbox-item:hover{
-  
-  width: 210px;
-  /* height: 100%; */
-  box-shadow: 1px 1px 7px #000000;
-  transition: all .5s;
-}
+
 .flexbox-item:hover .add{
   opacity:1;
   transition: all .5s;
