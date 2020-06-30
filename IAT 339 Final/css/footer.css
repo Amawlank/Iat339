@@ -3,7 +3,7 @@
 .footer{
 	background: #0B0A0A;
 	color:#d3d3d3;
-	height: 400px;
+	height: 500px;
 	position: relative;
 	padding: 20px;
 }
@@ -118,12 +118,15 @@ p{
 } 
 
 
-.footer .footer-content .contact-form .btn{
+.footer .footer-content .contact-form .submit{
 		
 	background-color: white;
+	padding: 5px;
+	border-radius: 0;
+	align-content: flex-start;
 }
 
-.footer .footer-content .contact-form .btn:hover{
+.footer .footer-content .contact-form .submit:hover{
 		
 	background-color: #009245;
 	color: white;
@@ -167,7 +170,7 @@ p{
 	padding-bottom: 90px;
 	}
 	
-	.footer .footer-content .contact-form .btn{
+	.footer .footer-content .contact-form .submit{
 		width: 100%;
 
 	}
