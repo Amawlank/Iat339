@@ -16,12 +16,22 @@ h1{
    display: flex;
    width: 80%;
    background: #fff;
-   background-color: rosybrown;
+   background-color: rgba(0,0,0,0.8);
    margin: 100px;
    border-radius: 7px;
    border-bottom: 2px solid rgba(0,0,0,0.8);
    flex-direction: column;
    flex-wrap: wrap;
+   justify-content: center;
+}
+
+.box .heading{
+   align-items: center;
+   align-content: center;
+   font-size: 1.9em;
+   color:#fff;
+   background-color: seagreen;
+
 }
 
 
