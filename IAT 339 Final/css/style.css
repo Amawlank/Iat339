@@ -28,6 +28,20 @@ h4, .title1, .title2{
   opacity: 0;
   color: white;
 }
+
+@media (max-width: 375px) { 
+  h4, .title1, .title2{
+    font-size: 5px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    opacity: 0;
+    color: white;
+  }
+}
+
+
+
+
 .contain h4{
   opacity: 1;
   font-size: 45px;
