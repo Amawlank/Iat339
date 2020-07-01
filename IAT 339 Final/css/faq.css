@@ -1,0 +1,73 @@
+body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.4;
+    }
+
+h1{
+   text-align: center;
+   background-color: rgba(0,149,69);
+   margin: 0;
+   color: #fff;
+   padding: 30px;
+}
+
+.box{
+   
+   display: flex;
+   width: 80%;
+   background: #fff;
+   background-color: rosybrown;
+   margin: 100px;
+   border-radius: 7px;
+   border-bottom: 2px solid rgba(0,0,0,0.8);
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+
+.box .faqs{
+   /* flex: 1 auto; */
+   align-content: center;
+   align-items: center;
+   margin-top: 50px;
+   /* padding: 0px 20px 20px; */
+}
+
+::-webkit-details-marker{
+   float: right;
+   margin-top: 3px;
+}
+
+details{
+   width: 100%;
+   background: #f6f6f6;
+   padding: 10px 20px;
+   border-radius: 7px;
+   margin-top: 20px;
+   font-size: 25px;
+   letter-spacing: 1px;
+   cursor: pointer;
+   border-bottom: 1px solid rgba(0,149,69);
+}
+
+details summary{
+   outline: none;
+}
+
+.text{
+   background-color: rgba(0,149,69);
+}
+
+@media only screen and (max-width: 375px){ 
+   .box{
+      margin-left: 70px;
+   
+   }
+}
+
+/* @media only screen and (max-width: 920px){ 
+   .box{
+      margin-left: 280px;
+   
+   }
+} */
