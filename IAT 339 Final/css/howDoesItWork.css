@@ -98,6 +98,24 @@ body {
     font-size: 18px;
 }
 
+.benefits a{
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+}
+.benefits a:hover{
+    
+    background: #565756;
+    color: #fff; 
+    transition: 0.5s;  
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
 @media (max-width: 1440px) { 
     .pickAplann{
         font-size: 22px;
@@ -178,6 +196,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         text-transform: uppercase;
+
     }
 }
 

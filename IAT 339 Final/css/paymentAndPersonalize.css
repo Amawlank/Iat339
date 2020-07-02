@@ -224,7 +224,7 @@ body {
 
 .pp{
     text-align: center;
-    background-color: rgba(0,169,49,.8);
+    background-color: #4e8f27;
     color: white;
 }
 
@@ -237,7 +237,7 @@ body {
     text-decoration: none;
 }
 .personalplan a:hover{
-    background: rgba(0,169,49,.8);
+    background: #009245;
     color: #fff; 
     transition: 0.5s;  
     padding: 10px 15px;
@@ -310,7 +310,7 @@ body {
     align-items: stretch;
     display: flex;
     justify-content: center;
-    background-color:rgba(0,169,49,.8);
+    background-color:#4e8f27;
 
 }
 
@@ -350,7 +350,7 @@ body {
     float: right;
     margin: 10px;
     width: 40%;
-    background-color:rgba(0,169,49,.8);
+    background-color:#2a6b04;
 }
 
 input{
@@ -397,7 +397,7 @@ input{
     }
     
     .details{
-        background-color: rgba(0,169,49,.8);
+        background-color: #4e8f27;
         color: white;
     }
 

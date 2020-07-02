@@ -16,7 +16,7 @@ h1{
    display: flex;
    width: 80%;
    background: #fff;
-   background-color: rgba(0,0,0,0.8);
+   /* background-color: rgba(0,0,0,0.8); */
    margin: 100px;
    border-radius: 7px;
    border-bottom: 2px solid rgba(0,0,0,0.8);
@@ -65,7 +65,7 @@ details summary{
 }
 
 .text{
-   background-color: rgba(0,169,49,.8);
+   background-color: rgba(173, 173, 173, 0.8);
 }
 
 @media only screen and (max-width: 375px){ 
