@@ -1,6 +1,132 @@
+/* BOX SHADOW TUTORIAL TAKEN FROM  */
+/* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-shadow */
+
 *{
     padding: 10px;
 }
+.personalPlan{
+background-color:white;
+}
+
+/* Toggle button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    height: 13px;
+    width: 40px;
+  }
+
+  .slider2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    background-color: green;
+    -webkit-transition: .4s;
+    transition: .4s;
+    height: 13px;
+    width: 40px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider2:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:green;
+  }
+
+  input:checked + .slider2 {
+    background-color:green;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px green;
+  }
+  
+  input:focus + .slider2 {
+    box-shadow: 0 0 1px green;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  input:checked + .slider2:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider2.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .slider2.round:before {
+    border-radius: 50%;
+  }
+
+/* Toggle button Ends */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
 .how h1{
     text-align: center;
     font-size: 40px;
@@ -8,6 +134,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
+    background-color: #eceae6;
 }
 .flexboxContainer{
     display: flex;
@@ -16,13 +143,291 @@ body {
 .flexbox-item{
     margin: 10px;
     width: 50%;
-    background-color: red;
 }
-
 .flexboxitem1{
     min-height: 400px;
 }
 
+.flexboxitem1 h1{
+    background: #009245;
+    color: #fff; 
+    text-align: center;
+}
+
 .flexboxitem2{
     min-height: 400px;
+}
+.flexboxitem2 h1{
+    background: #009245;
+    color: #fff; 
+    text-align: center;
+}
+
+.prefrenceContainer{
+    display: flex;
+    justify-content: center;
+}
+.prefrence-item{
+    margin: 10px;
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+.prefrence-item:hover{
+    transition: 0.5s;
+    border-color: green;
+    box-shadow: 5px 10px #1111119b;
+    cursor: pointer;
+}
+
+.prefrence1{
+    min-height: 200px;
+}
+
+.prefrence2{
+    min-height: 200px;
+}
+.prefrence3{
+    min-height: 200px;
+}
+
+/* Size Container */
+
+.sizeContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.size-item{
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
+    padding: 0;
+}
+
+
+.size1{
+    min-height: 40px;
+}
+
+.size2{
+    min-height: 40px;
+}
+.size3{
+    min-height: 40px;
+}
+
+.pp{
+    text-align: center;
+    background-color: #4e8f27;
+    color: white;
+}
+
+a{
+    font-size: 22px;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+a:hover{
+    background: #009245;
+    color: #fff; 
+    transition: 0.5s;  
+    padding: 10px 15px;
+    margin: 0 40% 0;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) { 
+    .flexboxContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexbox-item{
+        margin: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) { 
+    .flexboxContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexbox-item{
+        margin: 0;
+        width: 100%;
+    }
+    .prefrenceContainer{
+        flex-wrap: wrap;
+    }
+    .prefrence-item{
+        width: 30%;
+    }
+    .prefrence3{
+        width: 75%;
+    }
+    .prefrence3 img{
+        width:20%;
+        height: auto;
+    }
+    .size-item{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/* Address */
+.address{
+    background-color: #eceae6;
+}
+.addressContainer{
+    display: flex;
+}
+.address-item{   
+    margin: 10px;
+    width: 50%;
+}
+
+.addressitem1{
+    /* width: 50%; */
+    min-height: 200px;
+    align-items: stretch;
+    display: flex;
+    justify-content: space-around;
+}
+.addressitem2{
+    /* width: 50%; */
+    min-height: 200px;
+    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    background-color:#4e8f27;
+
+}
+
+.addressitem2 h1{
+    text-align: center;
+    font-size: 32px;
+}
+.addressitem2 h2{
+    font-size: 28px;
+    margin: 0;
+}
+.addressitem2 p{
+    font-size: 20px;
+    margin: 0;
+}
+
+.left{
+    float: left;
+    background-color: white;
+    margin: 10px;
+}
+
+.right{
+    float: right;
+    background-color: white;
+    margin: 10px;
+}
+
+.leftSummary{
+    float: left;
+    margin: 10px;
+    width: 40%;
+    
+}
+
+.rightSummary{
+    float: right;
+    margin: 10px;
+    width: 40%;
+    background-color:#2a6b04;
+}
+
+input{
+    width:85%;
+    padding: 2px;
+}
+
+@media (max-width: 768px) { 
+    .addressContainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .address-item{
+        margin: 10px; 
+        width: 95%;
+    }
+    
+}
+
+@media (max-width: 425px) { 
+    .addressContainer{
+        padding: 0;
+        width: 350px;
+    }
+    .address-item{
+        margin: 0; 
+        width: 105%;
+        padding: 0;
+    }
+
+    .left{
+        width: 50%;
+        padding: 10px;
+    }
+    .right{
+        width: 50%;
+        padding: 10px;
+    }
+
+    .left h1{
+        float: left;
+        font-size: 18px;
+    }
+    
+    .details{
+        background-color: #4e8f27;
+        color: white;
+    }
+
+    .right h1{
+        float: right;
+        font-size: 18px;
+        
+    }
+    .address form label{
+        font-size: 16px;
+    }
+    .placeholder{
+        font-size: 12px;
+    }
+
+    .size-item{
+        margin: 0;
+        padding: 0;
+    }
+    .address-item h1{
+        font-size: 22px;
+    }
+    .address-item h2{
+        font-size: 18px;
+    }
+    .address-item p{
+        font-size: 16px;
+    }
+    .right a{
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+  
 }

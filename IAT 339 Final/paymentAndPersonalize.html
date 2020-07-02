@@ -10,14 +10,168 @@
   <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/footer.css">
    <script src="https://kit.fontawesome.com/c9dbc15c0b.js" crossorigin="anonymous"></script>
-  <title>Menu Overlay</title>
+  <title>Personalize Plan</title>
 </head>
     <body>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#">How does it work</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         <section class="personalPlan">
-            <h1>Personalize Plan</h1>
+            <h1 class="pp">Personalize Plan</h1>
             <div class="flexboxContainer">
-                <div class="flexbox-item flexboxitem1"></div>
-                <div class="flexbox-item flexboxitem2"></div>
+                <div class="flexbox-item flexboxitem1">
+                    <h1>1.Choose your preference</h1>
+                    <div class="prefrenceContainer">
+                        <div class="prefrence-item prefrence1">
+                            <!-- https://www.iconfinder.com/icons/2822644/one_person_single_user_icon -->
+                            <img src="img/single.png" width="50%" height="auto">
+                            <h2>Singles Plan</h2>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="prefrence-item prefrence2">
+                            <!-- https://www.pngguru.com/free-transparent-background-png-clipart-klqsv -->
+                            <img src="img/family.png" width="50%" height="auto">
+                            <h2>Family<br>Plan</h2>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="prefrence-item prefrence3">
+                            <!-- https://www.pngguru.com/free-transparent-background-png-clipart-klqsv -->
+                            <img src="img/family.png" width="50%" height="auto">
+                            <h2>Veggie Plan</h2>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flexbox-item flexboxitem2">
+                    <h1>2. Customize your plan size</h1>
+                    <div class="sizeContainer">
+                        <div class="size-item size1">
+                            <h2>2 People</h2>
+                        </div>
+                        <div class="size-item size2">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider2 round"></span>
+                            </label>
+                        </div>
+                        <div class="size-item size3">                          
+                            <h2>4 People</h2>
+                        </div>
+                    </div>
+
+                    <div class="sizeContainer">
+                        <div class="size-item size1">
+                            <h2>2 Recipes</h2>
+                        </div>
+                        <div class="size-item size2">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider2 round"></span>
+                            </label>
+                        </div>
+                        <div class="size-item size3">                          
+                            <h2>3 Recipes</h2>
+                        </div>
+                    </div>
+                    <div class="sizeContainer">
+                        <div class="size-item size1">
+                            <h2>Total Price</h2>
+                        </div>
+                        
+                        <div class="size-item size2">                          
+                            <h2>$75</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#">Select This Plan</a>
+        </section>
+
+        <section class="address">
+            <div class="addressContainer">
+                <div class="address-item addressitem1">
+                    <div class="left">
+                        <h1 class="details">Address</h1>
+                    <form>
+                        <label>First name*</label>
+                        <input type="text" name="fname" placeholder="John"><br>
+                        <label>Last name*</label>
+                        <input type="email" placeholder="Doe"><br><br>
+                        <label>Email Id</label>
+                        <input type="text" name="fname" placeholder="Email">
+                        <label>Contact:</label>
+                        <input type="number"placeholder="7789557287"><br><br>
+                        <label>Address</label>
+                        <input type="text" placeholder="Line2">
+                        <label>Address</label>
+                        <input type="text" placeholder="Line2"><br><br>
+                      </form>
+                    </div>
+                <div class="right">
+                <h1 class="details">Card Details</h1>
+                <form>
+                    <label>Name:</label>
+                    <input type="text" name="fname" placeholder="First">
+                    <label></label>
+                    <input type="text" placeholder="Last"><br><br>
+                    <label>Number:</label>
+                    <input type="number" name="fname" placeholder="9437189478929"><br>
+                    <label>CVV</label>
+                    <input type="number" placeholder="321"><br><br>
+                    <a href="#">SUBMIT</a>
+                </form>
+            </div>
+
+
+                </div>
+                <div class="address-item addressitem2">
+                    <div class="leftSummary">
+                    <h1>Summary</h1>
+                    <h2>Type of Plan:</h2>
+                    <p>Recipes/week</p>
+                    <p>Number of People</p>
+                    <p>Address</p>
+                    <h2>Total</h2>
+                    <p>Shipping</p>
+                    <p>NOTE: Free shipping on your 1st Box</p>
+                    
+                </div>
+                <div class="rightSummary">
+                    <h1>Details</h1>
+                    <h2>Family Plan</h2>
+                    <p>3</p>
+                    <p>2 People</p>
+                    <p>13988-Fraser Highway</p>
+                    <h2>$75</h2>
+                    <p>FREE</p>
+                   
+                </div>
+                </div>
+                
             </div>
         </section>
        

@@ -1,6 +1,12 @@
 *{
     padding: 10px;
 }
+
+.hola{
+    background-color: #4e8f27;
+    color: white;
+}
+
 .how h1{
     text-align: center;
     font-size: 40px;
@@ -21,9 +27,25 @@ body {
 .flexboxitem1{
     min-height: 400px;
     width: 45%;
-    background: url('https://gorgeoussmiledental.com/wp-content/uploads/2017/08/1491.jpg') no-repeat
-    center top/cover;;
     margin: 10px;
+}
+
+/* https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto,w_458/v1/hellofresh_website/us/cms/howitworks/hiw-plan.jpg */
+.image1{
+    background: url('https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto,w_458/v1/hellofresh_website/us/cms/howitworks/hiw-plan.jpg') no-repeat
+    center top/cover;
+}
+
+/* https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto,w_458/v1/hellofresh_website/ca/cms/howitworks/How_It_Works_-_Delivery_458x320_1908.jpg */
+.image2{
+    background: url('https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto,w_458/v1/hellofresh_website/ca/cms/howitworks/How_It_Works_-_Delivery_458x320_1908.jpg') no-repeat
+    center top/cover;
+}
+
+/* https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto,w_458/v1/hellofresh_website/ca/cms/howitworks/How_It_Works_-_Enjoy_458x320_1908.jpg */
+.image3{
+    background: url('https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_auto,w_458/v1/hellofresh_website/ca/cms/howitworks/How_It_Works_-_Enjoy_458x320_1908.jpg') no-repeat
+    center top/cover;
 }
 
 .flexboxitem2{
@@ -37,6 +59,7 @@ body {
 }
 .flexboxitem2 h1{
     border-style: solid;
+    
 }
 
 .flexboxitem3{
@@ -50,6 +73,8 @@ body {
 .flexboxitem3 h1{
     text-align: center;
     font-size: 30px;
+    background-color: #4e8f27;
+        color: white;
 }
 .flexboxitem3 p{
     text-align: center;
@@ -189,7 +214,8 @@ body {
 
 /* benefit begins*/
 .benefits{
-    background-color: #eceae6;
+    background-color: rgba(0, 128, 0, 0.876);
+    color: white;
 }
 
 .benefits h1{
