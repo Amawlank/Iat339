@@ -4,7 +4,7 @@
  /* Don't uncomment the code above it can cause trouble in nav bar */
 
 .hola{
-    background-color: rgba(0,169,49,.8);
+    background-color: #4e8f27;
     color: white;
 }
 
@@ -74,7 +74,7 @@ body {
 .flexboxitem3 h1{
     text-align: center;
     font-size: 30px;
-    background-color: rgba(0,169,49,.8);
+    background-color: #4e8f27;
         color: white;
 }
 .flexboxitem3 p{
@@ -90,7 +90,7 @@ body {
 }
 .flexboxitem3 a:hover{
     
-    background: rgba(0,169,49,.8);
+    background: #009245;
     color: #fff; 
     transition: 0.5s;  
     padding: 10px 15px;
@@ -215,7 +215,7 @@ body {
 
 /* benefit begins*/
 .benefits{
-    background-color: rgba(0,169,49,.8);
+    background-color: rgba(0, 128, 0, 0.876);
     color: white;
 }
 
@@ -256,7 +256,7 @@ body {
 }
 .flexboxContainerBenefits a:hover{
     
-    background: rgba(0,169,49,.8);
+    background: #009245;
     color: #fff; 
     transition: 0.5s;  
     padding: 10px 15px;
