@@ -330,7 +330,7 @@ section .leftBox .content{
 }
 
 section .leftBox .content:hover{
-  background: green;
+  background: rgba(0,169,49,.8);
 }
 
 section .leftBox .content h1{
@@ -383,7 +383,7 @@ section .events ul li .time{
 }
 
 section .events ul li:hover .time{
-  background: #009245;
+  background: rgba(0,169,49,.8);
 }
 
 section .events ul li .time h2{
@@ -436,7 +436,7 @@ section .events ul li .details a{
 }
 
 section .events ul li .details a:hover{
-  background: #009245;
+  background: rgba(0,169,49,.8);
   color: #fff;
 }
 
@@ -599,7 +599,7 @@ section .events ul li .details a:hover{
   margin: 0 45% 3%;
 }
 .button1:hover {
-  background-color: #009245;
+  background-color: rgba(0,169,49,.8);
 }
 
 
@@ -741,7 +741,7 @@ section .events ul li .details a:hover{
 }
 
 .getStarted a:hover{
-  background-color: green;
+  background-color:rgba(0,169,49,.8);
   transition: 0.5s;
 }
 

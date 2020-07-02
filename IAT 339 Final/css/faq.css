@@ -5,7 +5,7 @@ body {
 
 h1{
    text-align: center;
-   background-color: rgba(0,149,69);
+   background-color: rgba(0,169,49,.8);
    margin: 0;
    color: #fff;
    padding: 30px;
@@ -30,7 +30,7 @@ h1{
    align-content: center;
    font-size: 1.9em;
    color:#fff;
-   background-color: seagreen;
+   background-color: rgba(0,169,49,.8);
 
 }
 
@@ -57,7 +57,7 @@ details{
    font-size: 25px;
    letter-spacing: 1px;
    cursor: pointer;
-   border-bottom: 1px solid rgba(0,149,69);
+   border-bottom: 1px solid rgba(0,169,49,.8);
 }
 
 details summary{
@@ -65,7 +65,7 @@ details summary{
 }
 
 .text{
-   background-color: rgba(0,149,69);
+   background-color: rgba(0,169,49,.8);
 }
 
 @media only screen and (max-width: 375px){ 

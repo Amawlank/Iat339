@@ -13,6 +13,10 @@
       left: 0;
       z-index: 1;
     }
+
+    .menu-wrap .menu a:hover{
+        color: rgba(0,169,49,.8);
+      }
     
     .menu-wrap .toggler {
       position: absolute;
