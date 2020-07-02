@@ -1,9 +1,11 @@
 /* BOX SHADOW TUTORIAL TAKEN FROM  */
 /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-shadow */
 
-*{
+/* *{
     padding: 10px;
-}
+} */
+
+/* Don't remove the comment it can cause trouble with the nav bar on the page */
 .personalPlan{
 background-color:white;
 }
@@ -226,7 +228,7 @@ body {
     color: white;
 }
 
-a{
+.personalplan a{
     font-size: 22px;
     display: flex;
     text-transform: uppercase;
@@ -234,7 +236,7 @@ a{
     justify-content: center;
     text-decoration: none;
 }
-a:hover{
+.personalplan a:hover{
     background: #009245;
     color: #fff; 
     transition: 0.5s;  

@@ -1,6 +1,7 @@
-*{
+/* *{
     padding: 10px;
-}
+/* }
+ /* Don't uncomment the code above it can cause trouble in nav bar */
 
 .hola{
     background-color: #4e8f27;
