@@ -18,7 +18,7 @@ body{
 
 .content h1{
   color: #fff;
-  margin-top: 0;
+  margin-top: 60px;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #009245;
@@ -295,6 +295,15 @@ transition: all .5s;
       height: 100%;
     }
   }
+
+
+  @media only screen and (max-width: 18em){
+   
+    .content h1{
+      margin-top: 0px;
+    }
+  }
+
 
   /* .line{
     padding-top: 60px;

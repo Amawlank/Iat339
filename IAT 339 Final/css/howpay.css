@@ -151,3 +151,41 @@
       text-decoration: none;
       transition: color 0.4s ease;
     }
+
+
+    @media(min-width: 58em){
+      .menu-wrap .menu {
+        visibility: visible;
+        overflow: visible;
+        height:0;
+        z-index: 1;
+        margin: 10px;
+      } 
+  
+      .menu-wrap .hamburger{
+        position: fixed;
+        width: 100%;
+      }
+  
+      .menu-wrap .hamburger > div {
+        width: 0;
+        height: 0px; 
+        background: none;
+        transition: none;
+       }
+       
+      .menu-wrap ul li{
+         display: inline;	  
+     }
+       
+      .menu-wrap .menu > div {
+        width: 0;
+        height: 100px;
+        flex-direction: column;
+        transform: scale(1);
+      } 
+       .menu-wrap .menu > div > div {
+        width: 700px;
+        opacity: 100%;
+      }
+    }
