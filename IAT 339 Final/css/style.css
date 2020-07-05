@@ -28,20 +28,6 @@ h4, .title1, .title2{
   opacity: 0;
   color: white;
 }
-
-@media (max-width: 375px) { 
-  h4, .title1, .title2{
-    font-size: 5px;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    opacity: 0;
-    color: white;
-  }
-}
-
-
-
-
 .contain h4{
   opacity: 1;
   font-size: 45px;
@@ -329,9 +315,9 @@ section .leftBox .content{
   transition: 0.5s;
 }
 
-section .leftBox .content:hover{
-  background: rgba(0,169,49,.8);
-}
+/* section .leftBox .content:hover{
+  background: green;
+} */
 
 section .leftBox .content h1{
   margin: 0;
@@ -383,7 +369,7 @@ section .events ul li .time{
 }
 
 section .events ul li:hover .time{
-  background: rgba(0,169,49,.8);
+  background: #009245;
 }
 
 section .events ul li .time h2{
@@ -436,7 +422,7 @@ section .events ul li .details a{
 }
 
 section .events ul li .details a:hover{
-  background: rgba(0,169,49,.8);
+  background: #009245;
   color: #fff;
 }
 
@@ -457,13 +443,24 @@ section .events ul li .details a:hover{
   }
 }
 
+
+
+@media (max-width: 550px) {
+  .flexboxContainer{
+    height: 800px;
+  }
+}
+
+
+
+
+
 @media (max-width: 425px) {       
 
   .flexbox-item {
-    width: 110%;
-    margin: 25%;
+    width: 100%;
+    margin: 10px;
   }
-  
 
   section .leftBox{
     width: 100%;
@@ -487,13 +484,13 @@ section .events ul li .details a:hover{
   }
 
   section .events ul li{
-    height: 160px;
+    height: 130px;
     margin: 10px;
   }
 
   section .events ul li .time h2{
 
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
   }
   
@@ -505,6 +502,7 @@ section .events ul li .details a:hover{
   section .events ul li .details p{
     margin: 0px;
     font-size: 12px;
+    padding-top: 20px;
   }
   
   section .events ul li .details a{
@@ -512,6 +510,19 @@ section .events ul li .details a:hover{
     margin-top: 0px;
     font-size: 14px;
   }
+
+  .contain{
+    text-align: center;
+    margin-top: 300px;
+  }
+  .contain h4{
+    opacity: 1;
+    font-size: 30px;
+  }
+  .getStarted p {
+  text-align: center;
+  }
+
 }
 
 @media (max-width: 375px) { 
@@ -549,39 +560,46 @@ section .events ul li .details a:hover{
   width: 250px;
   height: 300px;
   align-self: center;
-  background-color: #e91e63;
   align-items: center;
   color: #fff;
+  
 }
 .menuItem h2{
   padding: 20px 20px 0px;
   font-size: 32px;
-  line-height: 35px;
+  line-height: 35px;  background-color: rgba(0, 0, 0, 0.4);
+
+
 }
 .menuItem p{
   padding: 0px 20px 20px;
-  font-size: 18px;
+  font-size: 18px;  background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 .menu1{
   min-height: 400px;
-  background: url('https://images.creativemarket.com/0.1.0/ps/1213025/1360/906/m1/fpnw/wm1/bhurreifoygg576xbtxbvgsnfoawqfmse8gyluomogbe611p1n6wqver50ecm717-.jpg?1461681320&s=007d447f04f54ac2e757f99895692847') no-repeat
+  background: url('https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_432,q_auto,w_768/hellofresh_s3/image/tuscan-sausage-linguine-a0f57625.jpg') no-repeat
   center top/cover;
+  /* IMAGE TAKEN FROM https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_432,q_auto,w_768/hellofresh_s3/image/tuscan-sausage-linguine-a0f57625.jpg */
 }
 .menu2{
   min-height: 400px;
-  background: url('https://images.creativemarket.com/0.1.0/ps/1213025/1360/906/m1/fpnw/wm1/bhurreifoygg576xbtxbvgsnfoawqfmse8gyluomogbe611p1n6wqver50ecm717-.jpg?1461681320&s=007d447f04f54ac2e757f99895692847') no-repeat
+  background: url('https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/brie-cheese-mushroom-and-caramelized-onion-sandwich-29280431.jpg') no-repeat
   center top/cover;
+  /* IMAGE TAKEN FROM https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/brie-cheese-mushroom-and-caramelized-onion-sandwich-29280431.jpg */
 }
 .menu3{
   min-height: 400px;
-  background: url('https://images.creativemarket.com/0.1.0/ps/1213025/1360/906/m1/fpnw/wm1/bhurreifoygg576xbtxbvgsnfoawqfmse8gyluomogbe611p1n6wqver50ecm717-.jpg?1461681320&s=007d447f04f54ac2e757f99895692847') no-repeat
+  background: url('https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/lamb-merguez-patties-on-toasted-naan-b5c9e7dd.jpg') no-repeat
   center top/cover;
+  /* IMAGE TAKEN FROM https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/lamb-merguez-patties-on-toasted-naan-b5c9e7dd.jpg */
 }
 .menu4{
   min-height: 400px;
-  background: url('https://images.creativemarket.com/0.1.0/ps/1213025/1360/906/m1/fpnw/wm1/bhurreifoygg576xbtxbvgsnfoawqfmse8gyluomogbe611p1n6wqver50ecm717-.jpg?1461681320&s=007d447f04f54ac2e757f99895692847') no-repeat
+  background: url('https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/chicken-and-pineapple-mini-quesadillas-c923cffd.jpg') no-repeat
   center top/cover;
+  /* IMAGE TAKEN FROM : https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/chicken-and-pineapple-mini-quesadillas-c923cffd.jpg */
 }
 
 .button {
@@ -599,13 +617,13 @@ section .events ul li .details a:hover{
   margin: 0 45% 3%;
 }
 .button1:hover {
-  background-color: rgba(0,169,49,.8);
+  background-color: #009245;
 }
 
 
 @media (max-width: 991px) {
   .MenuSection{
-    height: 1200px;
+    height: 2100px;
     margin-top: 40%;
   }
   .menuItem{
@@ -632,10 +650,16 @@ section .events ul li .details a:hover{
 }
 
 
+@media (max-width: 769px) {
+  .MenuSection{
+    height: 1200px;
+  }
+}
+
 @media (max-width: 425px) {   
   .MenuSection{
-    height: 900px;
-    margin-top: 65%;
+    height: 800px;
+    margin-top: 15%;
   }
   .menu p{
     font-size: 16px;
@@ -741,9 +765,11 @@ section .events ul li .details a:hover{
 }
 
 .getStarted a:hover{
-  background-color:rgba(0,169,49,.8);
+  background-color: green;
   transition: 0.5s;
 }
+
+
 
 /* STAY UPDATED Begins */
 
