@@ -1,0 +1,113 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+.flexboxContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+  }
+  
+  .flexbox-item{
+    width: 50%;
+    margin: 50px;
+    height: 500px;
+    /* background-color: red; */
+  }
+  
+img{
+    margin-top: 15%;
+    width: 100%;
+    height: auto;
+}
+  
+  .flexbox-item-2 h1{
+      font-size: 32px;
+      padding: 20px 20px 0;
+    color: green;
+    
+  }
+  .flexbox-item-2 p{
+    font-size: 5px 20px 20px;
+    padding: 20px;
+}
+
+@media (max-width: 1025px) {
+      
+  .flexbox-item{
+    margin: 25px;
+    height: 700px;
+    }
+    .flexbox-item-2 h1{
+        font-size: 28px;
+        padding: 20px 20px 0;
+      color: green;  
+    }
+    .flexbox-item-2 p{
+      font-size: 5px 20px 20px;
+      padding: 18px;
+    }
+    img{
+        margin-top: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .flexboxContainer{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        height: 1400px;
+    }
+    .flexbox-item{
+        margin: 15px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 2000px;
+      }
+      .flexbox-item-2 h1{
+        font-size: 28px;
+        padding: 20px 20px 0;
+        color: green;  
+      }
+      .flexbox-item-2 p{
+        font-size: 5px 20px 20px;
+        padding: 18px;
+      }
+      img{
+          width: 100%;
+          height: auto;
+          margin-top: 25%;
+      }
+}
+
+@media (max-width: 425px) {
+    .flexboxContainer{
+        height: 1100px;
+    }
+    .flexbox-item{
+        margin: 15px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+      }
+    .flexbox-item-1{
+        height: 400px;
+    }
+
+    .flexbox-item-2 h1{
+        font-size: 24px;
+        padding: 10px;
+        color: green;  
+      }
+      .flexbox-item-2 p{
+        font-size:18px;
+        padding: 10px;
+      }
+}
+

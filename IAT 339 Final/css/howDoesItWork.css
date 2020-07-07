@@ -1,12 +1,11 @@
-/* *{
-    padding: 10px;
-/* }
- /* Don't uncomment the code above it can cause trouble in nav bar */
+*{
+    /* padding: 10px; */
+}
 
 .hola{
     background-color: #4e8f27;
     color: white;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 .how h1{
@@ -20,6 +19,8 @@ body {
 .flexboxContainer{
     display: flex;
     justify-content: center;
+    padding: 5px;
+
 }
 .flexbox-item{
     margin: 10px;
@@ -99,24 +100,6 @@ body {
     font-size: 18px;
 }
 
-.benefits a{
-    text-align: center;
-    font-size: 22px;
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: black;
-}
-.benefits a:hover{
-    
-    background: #565756;
-    color: #fff; 
-    transition: 0.5s;  
-    padding: 10px 15px;
-    margin-top: 15px;
-    font-size: 18px;
-}
-
 @media (max-width: 1440px) { 
     .pickAplann{
         font-size: 22px;
@@ -124,6 +107,7 @@ body {
         text-transform: uppercase;
         align-items: center;
         justify-content: center;
+        padding-bottom: 10px;
     }
 }
 
@@ -197,7 +181,6 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         text-transform: uppercase;
-
     }
 }
 
@@ -242,6 +225,7 @@ body {
 .benefits h1{
     text-align: center;
     font-size: 40px;
+    padding-top: 10px;
 }
 
 .flexboxContainerBenefits{
