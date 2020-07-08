@@ -3,7 +3,7 @@
 } */
 
 .hola{
-    background-color: #4e8f27;
+    background-color: #009245;
     color: white;
     margin-top: 70px;
 }
@@ -76,7 +76,7 @@ body {
 .flexboxitem3 h1{
     text-align: center;
     font-size: 30px;
-    background-color: #4e8f27;
+    background-color: #009245;
         color: white;
 }
 .flexboxitem3 p{
@@ -218,11 +218,12 @@ body {
 
 /* benefit begins*/
 .benefits{
-    background-color: rgba(0, 128, 0, 0.876);
+    background-color: rgba(68, 68, 68, 0.876);
     color: white;
 }
 
 .benefits h1{
+    /* color: #; */
     text-align: center;
     font-size: 40px;
     padding-top: 10px;

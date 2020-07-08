@@ -162,7 +162,7 @@ body {
     left: -600px;
     opacity: 0;
     width: 600px;
-    
+    background-color: rgba(0,0,0,0.8);
     color: #fff;
     padding: 35px;
 }
@@ -767,6 +767,24 @@ section .events ul li .details a:hover{
 .getStarted a:hover{
   background-color: green;
   transition: 0.5s;
+}
+
+.but{
+  background-color: #009245;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.but:hover{
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
