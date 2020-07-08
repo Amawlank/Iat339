@@ -15,7 +15,7 @@ h1{
 .box{
    
    display: flex;
-   /* width: 80%; */
+   width: 100%;
    background: #fff;
    border-radius: 7px;
    border-bottom: 2px solid rgba(0,0,0,0.8);
@@ -40,6 +40,8 @@ h1{
 .box .faqs{
    /* flex: 1 auto; */
    width: 80%;
+   margin-left: 10%;
+   margin-right: 10%;
    align-content: center;
    align-items: center;
    margin-top: 50px;
@@ -94,3 +96,50 @@ details summary{
 
    }
 }
+
+
+@media (max-width: 1024px) {       
+   
+
+   .box .heading{
+      width: 98%;
+   }
+}
+
+@media (max-width: 768px) {       
+   
+   .box .faqs{
+     width: 77%;
+   }
+   .box .heading{
+      width: 97.4%;
+   }
+}
+
+@media (max-width: 425px) {       
+   details{
+      padding: 10px 10px;
+   }
+   .box .faqs{
+     width: 76%;
+   }
+   .box .heading{
+      width: 95%;
+   }
+   
+}
+@media (max-width: 375px) {       
+   .box .faqs{
+      margin-left: 0;
+      margin-right: 0;
+      width: 73%;
+
+   }
+   .box{
+      margin-left: 0px;
+   }
+   details{
+      padding:10px 50px;
+   }
+}
+
