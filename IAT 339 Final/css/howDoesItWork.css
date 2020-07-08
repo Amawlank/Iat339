@@ -294,3 +294,9 @@ body {
     }
 }
 
+@media(max-width: 58em){
+    .hola{
+        margin-top: 0px;
+    }
+}
+
