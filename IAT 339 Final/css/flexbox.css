@@ -156,6 +156,21 @@ border-radius: 12px;
   transition: all .5s;
 }
 
+.flexbox-item .stock{
+  align-items: flex-end;
+  width: 100%;
+  object-fit: cover;
+ 
+}
+
+.flexbox-item:hover .stock{
+  opacity:1;
+  transition: all .5s;
+}
+
+
+
+
 .checked{
   color: #009245;
 }
@@ -202,6 +217,30 @@ transition: all .5s;
 	background-color: rgba(0, 146, 69, 0.8);
 	color: #FFFFFF;
 }
+
+
+.stock{
+  background-color: rgba(0, 0, 0, 0.8);
+  align-content: flex-end;
+  border: none;
+  color: #fff;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  /*margin: 75px;*/
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  opacity: 0;
+  transition: all .5s;
+  /*border-radius: 12px;*/
+  }
+  .stock:hover{
+    background-color: rgba(211, 59, 59, 0.8);
+    color: #FFFFFF;
+  }
 .img-wrapper{
   width: 100%;
   position: relative;

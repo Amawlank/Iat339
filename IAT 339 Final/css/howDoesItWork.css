@@ -6,6 +6,7 @@
     background-color: #009245;
     color: white;
     margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .how h1{
@@ -77,11 +78,15 @@ body {
     text-align: center;
     font-size: 30px;
     background-color: #009245;
-        color: white;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .flexboxitem3 p{
     text-align: center;
     font-size: 22px;
+    /* margin-bottom: 0px;
+    margin-top: 0px; */
 }
 .flexboxitem3 a{
     text-align: center;
@@ -142,6 +147,22 @@ body {
         text-transform: uppercase;
         align-items: center;
         justify-content: center;
+    }
+
+    .flexboxitem3 h1{
+        text-align: center;
+        font-size: 30px;
+        background-color: #009245;
+        color: white;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .flexboxitem3 p{
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 100px;
+        /* margin-top: 0px; */
     }
 }   
 
@@ -213,6 +234,15 @@ body {
         justify-content: center;
         text-transform: uppercase;
     }
+
+    /* .flexboxitem3 h1{
+        margin-bottom: 20px;
+    }
+    .flexboxitem3 p{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 0px;
+    } */
 }
 
 
@@ -220,6 +250,7 @@ body {
 .benefits{
     background-color: rgba(68, 68, 68, 0.876);
     color: white;
+    width: 100%;
 }
 
 .benefits h1{
@@ -235,8 +266,8 @@ body {
     flex-wrap: wrap;
 }
 .flexbox-benefit{
-    width: 400px;
-    margin: 10px;
+    /* width: 400px; */
+    /* margin: 10px; */
     height: 200px;
 }
    
@@ -276,9 +307,6 @@ body {
 } 
 
 @media (max-width: 768px) {   
-    .flexboxContainerBenefits{
-        height: 1200px;
-    }
     .flexbox-benefit{
         padding: 0;
         margin: 0;
