@@ -1,4 +1,3 @@
-
 .WorkSection{
   background-color:white;
 }
@@ -135,6 +134,14 @@
     height: 900px;
   }
 }
+
+@media (max-width: 720px) {
+  .WorkSection {
+    height: 2150px;
+  }
+}
+
+
 
 @media (max-width: 425px) {   
   .WorkSection{
