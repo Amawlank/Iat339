@@ -6,6 +6,7 @@
 	height: 500px;
 	position: relative;
 	padding: 20px;
+	width:100%
 }
 
 .footer .footer-content{
@@ -88,8 +89,8 @@ p{
 
 .footer .footer-content .links ul a{
 	color: white;
-    list-style-type: none;
-	display: block;
+    /* list-style-type: none; */
+	/* display: block; */
 	margin: 10px;
 	font-size: 1.8em;
 	transition: all .3s;
