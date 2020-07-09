@@ -14,11 +14,11 @@ body{
 
 .content h1{
   color: #fff;
-  margin-top: 5px;
+  margin-top: 70px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #009245;
-  align-items: center
+  align-items: center;
 }
 /*second navigation for menu screen starts here*/
 .button{
@@ -72,7 +72,7 @@ border-radius: 12px;
   align-content: center;
 }
 
-.flexbox-item{
+.flexbox-container .flexbox-item{
   padding-bottom: 50px;
   width: 300px;
   height: 500px;
@@ -81,12 +81,12 @@ border-radius: 12px;
   /* min-height: 100px; */
   transition: all .5s ease-in-out;
 }
-.flexbox-item:hover{
+.flexbox-container .flexbox-item:hover{
   width: 300px;
-  height: 60%;
+  height: 50%;
   box-shadow: 1px 1px 7px #000000;
   transition: all .5s ease-in-out;
-  transform: translateY(50px);
+  transform: translateY(-50px);
 }
 
 .flexbox-item a{
