@@ -1,0 +1,835 @@
+/* https://www.youtube.com/watch?v=DZg6UfS5zYg */
+/* CORE STYLES */
+
+/* Changing TEXT ANIMATION                   https://www.youtube.com/watch?v=iacREwS0SFI */
+
+header{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contain{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  height: 100px;
+  margin-top: 300px;
+}
+
+h4, .title1, .title2{
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  opacity: 0;
+  color: white;
+}
+.contain h4{
+  opacity: 1;
+  font-size: 45px;
+}
+.title1, .title2{
+  position: absolute;
+  bottom: 0px;
+}
+.title1{
+  animation: 4s slideDown 0s infinite;
+}
+.title2{
+  animation: 4s slideDown 2s infinite;
+}
+@keyframes slideDown{
+  0%{
+    opacity: 0;
+    bottom: 40px;
+  }
+  5%{
+    opacity: 1;
+    bottom: 0;
+  }
+  45%{
+    opacity: 1;
+    bottom: 0;
+  }
+  50%{
+    opacity: 0;
+    bottom: -40px;
+  }
+}
+/* Changing TEXT ANIMATION END */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+.showcase {
+  background: var(--primary-color);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+.showcase:before {
+  content: '';
+  background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+}
+
+.showcase p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary-color);
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+  background-color: white;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+
+/* Image slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current{
+    opacity: 1;
+}
+
+
+.slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 35px;
+}
+
+.slide .landing {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 35px;
+}
+
+
+.slide .content h1 {
+    margin-bottom: 10px;
+}
+
+.slide .landing h1 {
+  margin-bottom: 10px;
+  color: white;
+}
+  
+.slide.current .content {
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.slide.current .landing {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+
+
+.buttons button#next {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+  }
+  
+.buttons button#prev {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+}
+  
+.buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+  
+.buttons button:hover {
+    background-color: #fff;
+    color: #333;
+}
+  
+@media (max-width: 500px) {
+    .slide .content {
+      bottom: -300px;
+      left: 0;
+      width: 100%;  
+    }
+    .slide .landing {
+      bottom: -300px;
+      left: 0;
+      width: 100%;  
+    }
+
+    .slide.current .content {
+      transform: translateY(-300px);
+    }
+    .slide.current .landing {
+      transform: translateY(-300px);
+    }
+}
+
+
+/* Backgorund Images  */
+ 
+.slide:first-child {
+  background: url('https://gorgeoussmiledental.com/wp-content/uploads/2017/08/1491.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/05/01/12/mexicanfood.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('https://4.bp.blogspot.com/-V9-V3z6qZJQ/VN4YPziFQqI/AAAAAAAACUE/gkjhH2Nu3gY/s1600/15263-Fish%2C%2BSalad%2C%2BBread%2BFood%2BHD%2BWallpaperz.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(4) {
+  background: url('https://assets.epicurious.com/photos/59d3b24f94c5526f0b92b04f/master/pass/indian-butter-chicken-curry-recipe-100317.jpg') no-repeat
+    center top/cover;
+}
+
+
+/* Events section */
+section{
+  width: 100%;
+  height: 100%;  
+  background-color: #fff;
+}
+
+.flexboxContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 700px;
+}
+
+.flexbox-item{
+  width: 50%;
+  margin: 10px;
+  /* background-color: red; */
+}
+
+.flexbox-item flexbox-item-1{
+  min-height: 110%;
+}
+
+.flexbox-item flexbox-item-2{
+  min-height: 110%;
+}
+
+
+
+section .leftBox{
+  width: 100%;
+  height: 50%;
+  float: left;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+section .leftBox .content{
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  transition: 0.5s;
+}
+
+/* section .leftBox .content:hover{
+  background: green;
+} */
+
+section .leftBox .content h1{
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+section .leftBox .content p{
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+section .events{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  float: right;
+  box-sizing: border-box;
+}
+
+section .events ul{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+section .events ul li{
+  list-style: none;
+  background: #fff;
+  box-sizing: border-box;
+  height: 200px;
+  margin: 10px;
+}
+
+section .events ul li .time{
+  position: relative;
+  padding: 20px;
+  background: #262626;
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  transition: .5s;
+}
+
+section .events ul li:hover .time{
+  background: #009245;
+}
+
+section .events ul li .time h2{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+
+section .events ul li .time h2 span{
+  font-size: 30px;
+}
+
+section .events ul li .details{
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+
+section .events ul li .details h3{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+section .events ul li .details p{
+  position: relative;
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+section .events ul li .details a{
+  display:inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+section .events ul li .details a:hover{
+  background: #009245;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .flexboxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .flexbox-item {
+    width: 100%;
+    height: auto;
+    margin: 20%;
+  }
+  section .events ul{
+    margin-left: 6%;
+  }
+}
+
+
+
+@media (max-width: 550px) {
+  .flexboxContainer{
+    height: 800px;
+  }
+}
+
+
+@media (max-width: 425px) {       
+
+  .flexbox-item {
+    width: 100%;
+    margin: 10px;
+  }
+
+  section .leftBox{
+    width: 100%;
+    height: 20%;
+  }
+/* section 1 */
+  section .leftBox .content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  
+  section .leftBox .content p{
+    margin: 5px 0 0;
+    padding: 0;
+  }
+  /* section 2 */
+  section .events ul{
+    margin: 45px;
+  }
+
+  section .events ul li{
+    height: 130px;
+    margin: 10px;
+  }
+
+  section .events ul li .time h2{
+
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+  section .events ul li .details h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -15px;
+  }
+  section .events ul li .details p{
+    margin: 0px;
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  
+  section .events ul li .details a{
+    padding: 10px 50px;
+    margin-top: 0px;
+    font-size: 14px;
+  }
+
+  .contain{
+    text-align: center;
+    margin-top: 300px;
+  }
+  .contain h4{
+    opacity: 1;
+    font-size: 30px;
+  }
+  .getStarted p {
+  text-align: center;
+  }
+
+}
+
+@media (max-width: 375px) { 
+  section .events ul li .details a{
+    padding: 10px 30px;
+    margin-top: 0px;
+    font-size: 12px;
+  }
+}
+
+/* MENU READ */
+
+.MenuSection{
+  background-color:#eceae6;
+}
+
+.menu h1{
+  text-align: center;
+  padding: 10px;
+}
+.menu p{
+  text-align: center;
+
+}
+
+
+.menuContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
+}
+
+.menuItem{
+  width: 250px;
+  height: 300px;
+  align-self: center;
+  align-items: center;
+  color: #fff;
+  
+}
+.menuItem h2{
+  padding: 20px 20px 0px;
+  font-size: 32px;
+  line-height: 35px;  background-color: rgba(0, 0, 0, 0.4);
+
+
+}
+.menuItem p{
+  padding: 0px 20px 20px;
+  font-size: 18px;  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.menu1{
+  min-height: 400px;
+  background: url('https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_432,q_auto,w_768/hellofresh_s3/image/tuscan-sausage-linguine-a0f57625.jpg') no-repeat
+  center top/cover;
+  /* IMAGE TAKEN FROM https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_432,q_auto,w_768/hellofresh_s3/image/tuscan-sausage-linguine-a0f57625.jpg */
+}
+.menu2{
+  min-height: 400px;
+  background: url('https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/brie-cheese-mushroom-and-caramelized-onion-sandwich-29280431.jpg') no-repeat
+  center top/cover;
+  /* IMAGE TAKEN FROM https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/brie-cheese-mushroom-and-caramelized-onion-sandwich-29280431.jpg */
+}
+.menu3{
+  min-height: 400px;
+  background: url('https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/lamb-merguez-patties-on-toasted-naan-b5c9e7dd.jpg') no-repeat
+  center top/cover;
+  /* IMAGE TAKEN FROM https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/lamb-merguez-patties-on-toasted-naan-b5c9e7dd.jpg */
+}
+.menu4{
+  min-height: 400px;
+  background: url('https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/chicken-and-pineapple-mini-quesadillas-c923cffd.jpg') no-repeat
+  center top/cover;
+  /* IMAGE TAKEN FROM : https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_304,q_auto,w_540/hellofresh_s3/image/chicken-and-pineapple-mini-quesadillas-c923cffd.jpg */
+}
+
+.button {
+  border: none;
+  background-color:rgba(0, 0, 0, 0.8);
+  padding: 16px 32px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 0 45% 3%;
+}
+.button1:hover {
+  background-color: #009245;
+}
+
+
+@media (max-width: 991px) {
+  .MenuSection{
+    height: 2100px;
+    margin-top: 40%;
+  }
+  .menuItem{
+    width: 280px;
+    margin: 40px;
+  }
+  .menuItem h2{
+    font-size: 34px;
+    line-height: 30px;
+  }
+  .menuItem p{
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 10px;
+  }
+  .button{
+    font-size: 10px;
+  }
+  .button1{
+    margin-top: 450px;
+    margin-left: 43%;
+    
+  }
+}
+
+
+@media (max-width: 769px) {
+  .MenuSection{
+    height: 1200px;
+  }
+}
+
+@media (max-width: 720px) {
+  .MenuSection {
+    margin-top: 15%;
+    height: 2100px;
+  }
+}
+
+
+
+@media (max-width: 425px) {   
+  .MenuSection{
+    height: 800px;
+    margin-top: 15%;
+  }
+  .menu p{
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  .menuItem{
+    width: 180px;
+    margin: 10px;
+  }
+  .menuItem h2{
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .menuItem p{
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 10px;
+  }
+
+  .menu1{
+    min-height: 300px;
+  }
+  .menu2{
+    min-height: 300px;
+  }
+  .menu3{
+    min-height: 300px;
+  }
+  .menu4{
+    min-height: 300px;
+  }
+
+  .button1{
+    margin-top: 150px;
+    margin-left: 38%;
+  }
+}
+
+@media (max-width: 375px) { 
+  .menuItem{
+    width: 130px;
+    height: 100px;
+    margin: 10px;
+  }
+  .menuItem h2{
+    font-size: 20px;
+    padding: 10px;
+    line-height: 20px;
+  }
+  .menuItem p{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 10px 10px;
+  }
+  .menu1{
+    min-height: 200px;
+  }
+  .menu2{
+    min-height: 200px;
+  }
+  .menu3{
+    min-height: 200px;
+  }
+  .menu4{
+    min-height: 200px;
+  }
+  .button1{
+    margin-top: 30px;
+    margin-left: 36%;
+  }
+
+}
+/* MENU SECTION ENDS */
+
+/* GET STARTED SECTION BEGINS */
+
+.getStarted{
+  height: 300px;
+  width:100%;
+  background-image: url("https://user-images.githubusercontent.com/56777028/85898026-5831b080-b7b0-11ea-8ab6-55d67f2ceadb.jpg");
+
+}
+.getStarted h3{
+  font-size: 3em;
+  color: #fff;
+  padding: 50px 50px 0px;
+}
+.getStarted p{
+  font-size: 1.5em;
+  color: #fff;
+  padding: 0px 50px;
+}
+.getStarted a{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  padding: 0px 50px;
+  width: 150px;
+  margin: 50px 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.getStarted a:hover{
+  background-color: green;
+  transition: 0.5s;
+}
+
+.but{
+  background-color: #009245;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.but:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* STAY UPDATED Begins */
+
+/* .stayUpdated{
+  width: 100%;
+  text-align: center;
+  height: 150px;
+  background-color:white;
+}
+.stayUpdated h1{
+  font-size: 28px;
+  padding: 30px 0 0px;
+  line-height: 5px;
+}
+
+.stayUpdated p{
+  font-size: 18px;
+}
+form{
+  margin-top: 10px;
+  display: inline-flex;
+  font-size: 14px;
+}
+
+.stayUpdated a{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  padding: 0px 50px;
+  width: 50px;
+  margin: 50px 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.stayUpdated a:hover{
+  background-color: green;
+  transition: 0.5s;
+} */
